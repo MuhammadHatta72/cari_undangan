@@ -21,6 +21,12 @@ class IndexController extends Controller
 
         return view('themes', compact('invitations'));
     }
+
+    public function themeDetail($id)
+    {
+        $invitation = Invitation::where('id', $id)->firstOrFail();
+        return view('theme', compact('invitation'));
+    }
     // public function profile($id)
     // {
     //     $asistant = Asistant::find($id);

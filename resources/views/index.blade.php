@@ -203,7 +203,7 @@
                         <div class="row">
                             @foreach ($invitations as $theme)
                                 <div class="col-md-3 mb-3" style="border-radius: 20px; overflow: hidden;">
-                                    <a href="/undangan">
+                                    <a href="/semua-tema/{{ $theme->id }}">
                                         <img src="{{ $theme->image_theme == null ? asset('images/theme.jpg') : asset('storage/themes/' . $theme->image_theme) }}"
                                             style="width: 100%; border-radius: 10px;" alt="theme">
                                     </a>

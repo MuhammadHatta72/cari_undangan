@@ -20,6 +20,7 @@ use App\Http\Controllers\InvitationController;
 
 Route::get('/', [IndexController::class, 'index']);
 Route::get('/semua-tema', [IndexController::class, 'allThemes']);
+Route::get('/semua-tema/{id}', [IndexController::class, 'themeDetail']);
 Route::get('/profile/{id}', [IndexController::class, 'profile']);
 
 Route::get('/form', function () {
